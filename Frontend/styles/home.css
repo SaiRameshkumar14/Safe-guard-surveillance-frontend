@@ -1,8 +1,7 @@
- /*---------------Start Home.html-------------------------- */
  @import url('https://fonts.googleapis.com/css2?family=poppins:wght@700&display=swap');
 
 
-/*----------------------------common css-------------------------- */
+/*---------------------------------------------------------------common css------------------------------------------------------------ */
 
 
 *{
@@ -12,6 +11,10 @@
 
 body{
     background-color: rgb(37, 6, 63);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .backimage{
@@ -86,104 +89,6 @@ box-shadow: 0px 25px 50px -12px rgba(247, 247, 247, 0.668);
 border-radius: 48px;
 }
 
-
-
-/*-------------------------common css-------------------------- */
-
-
-
-ul{
-    list-style: none;
-    text-decoration: none;
-}
-
-
-#textmain{
-/* Safe-Guard Surveillance */
-position: absolute;
-width: 50%;
-
-font-family: system-ui;
-font-style: normal;
-font-size: 6vh;
-font-size: 4vw;
-line-height: 100%;
-margin-top: 80vh;
-margin-left: -6%;
-/* or 97px */
-text-align: center;
-cursor: pointer;
-text-transform: uppercase;
-text-shadow: 2px 2px 5px rgb(213, 213, 213);
-letter-spacing: 0.10em;
-color: #FFFFFF;
-}
-#textmain:hover{
-    font-size: 5vh;
-    font-size: 5vh;
-
-}
-
-
- /* Scroll  Bar */
- /* .content::-webkit-scrollbar {
-    width: 10px;
-
-  }
-   
-  /* Handle 
-  .content::-webkit-scrollbar-thumb {
-    background: linear-gradient(rgb(8, 7, 120),rgb(169, 0, 181));
-    border-radius: 10px;
-  }*/
-
-::-webkit-scrollbar {
-    display: none;
-}
-
- /*---------- body content -------------*/
-.texthead{
-
-    /*text-decoration-line: underline;*/
-    font-family: "Lucida Console", "Courier New", monospace;
-    text-align: center;
-    margin-top: 6%;
-    
-    font-family: system-ui;
-    text-decoration: wavy;
-     /* transition */
-     position: relative;
-     color: rgb(255, 255, 255);
-
-}
-
-.texthead::before{
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    font-size: 5vh;
-    font-size: 5vw;
-    color: #5c0b6a9c;
-    -webkit-text-stroke: 0vw #e6e6e6; 
-    border-right: 2px solid #25032b;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
-}
-
-@keyframes animate
-{
-    0%,10%,100%
-    {
-        width: 0;
-    }
-    70%,90%
-    {
-        width: 100%;
-    }
-}
-
 .navbar , .navbar > a{
     display: flex;
     flex-direction: row;
@@ -216,6 +121,102 @@ color: #FFFFFF;
     box-shadow: 0;
     text-decoration: underline;
 }
+
+
+
+/*------------------------------------------------------End common css-------------------------------------------------- */
+
+ /*---------------Start Home.html-------------------------- */
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+#textmain{
+/* Safe-Guard Surveillance */
+position: absolute;
+width: 50%;
+
+font-family: system-ui;
+font-style: normal;
+font-size: 6vh;
+font-size: 4vw;
+line-height: 100%;
+margin-top: 80vh;
+margin-left: -6%;
+/* or 97px */
+text-align: center;
+cursor: pointer;
+text-transform: uppercase;
+text-shadow: 2px 2px 5px rgb(213, 213, 213);
+letter-spacing: 0.10em;
+color: #FFFFFF;
+}
+
+#textmain:hover{
+    font-size: 5vh;
+    font-size: 5vh;
+
+}
+
+
+ /* Scroll  Bar */
+ /* .content::-webkit-scrollbar {
+    width: 10px;
+
+  }
+   
+  /* Handle 
+  .content::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(8, 7, 120),rgb(169, 0, 181));
+    border-radius: 10px;
+  }*/
+
+ /*---------- body content -------------*/
+.texthead{
+
+    /*text-decoration-line: underline;*/
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    margin-top: 6%;
+    
+    font-family: system-ui;
+    text-decoration: wavy;
+     /* transition */
+     position: relative;
+     color: rgb(255, 255, 255);
+}
+
+.texthead::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    font-size: 5vh;
+    font-size: 5vw;
+    color: #5c0b6a9c;
+    -webkit-text-stroke: 0vw #e6e6e6; 
+    border-right: 2px solid #25032b;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+
 
 .startbutton{
     position: absolute;
