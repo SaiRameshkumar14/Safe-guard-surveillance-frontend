@@ -2,17 +2,16 @@
  @import url('https://fonts.googleapis.com/css2?family=poppins:wght@700&display=swap');
 
 
- *{
+/*----------------------------common css-------------------------- */
+
+
+*{
     margin: 0;
     padding: 0;
 }
+
 body{
     background-color: rgb(37, 6, 63);
-}
-
-ul{
-    list-style: none;
-    text-decoration: none;
 }
 
 .backimage{
@@ -21,6 +20,58 @@ ul{
     height: 100%;
     background: #140729;
 }
+
+.snow,.snow:after,.snow:before{
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+    radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+    radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+    radial-gradient(3px 3px at 450px 200px, #fff, transparent),
+    radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+    radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+    radial-gradient(3px 3px at 50px 450px, #fff, transparent);
+    background-size: 750px 750px ;
+
+    animation: snowAnim 3s linear;
+    animation-iteration-count: infinite;
+
+}
+
+.snow-box{
+height: 100%;
+}
+.snow:after{
+margin-left: -250px;
+opacity: 0.5;
+filter: blur(2px);
+animation-direction: reverse;
+animation-duration: 7s;
+}
+
+.snow:before{
+margin-left: -250px;
+opacity: 0.7;
+filter: blur(1px);
+animation-direction: reverse;
+animation-duration: 10s;
+}
+
+@keyframes snowAnim{
+from{
+    transform: translateY(0);
+}
+to{
+    transform: translateY(650px);
+}
+}
+
 
 .content{
     /* website screen */
@@ -34,6 +85,18 @@ background: #FFFFFF;
 box-shadow: 0px 25px 50px -12px rgba(247, 247, 247, 0.668);
 border-radius: 48px;
 }
+
+
+
+/*-------------------------common css-------------------------- */
+
+
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
 
 #textmain{
 /* Safe-Guard Surveillance */
@@ -61,56 +124,6 @@ color: #FFFFFF;
 
 }
 
-.snow,.snow:after,.snow:before{
-        position: absolute;
-        top: -50%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: 
-        radial-gradient(4px 4px at 100px 50px, #fff, transparent),
-        radial-gradient(6px 6px at 200px 150px, #fff, transparent),
-        radial-gradient(3px 3px at 300px 250px, #fff, transparent),
-        radial-gradient(4px 4px at 400px 350px, #fff, transparent),
-        radial-gradient(6px 6px at 500px 100px, #fff, transparent),
-        radial-gradient(3px 3px at 450px 200px, #fff, transparent),
-        radial-gradient(4px 4px at 150px 300px, #fff, transparent),
-        radial-gradient(6px 6px at 250px 400px, #fff, transparent),
-        radial-gradient(3px 3px at 50px 450px, #fff, transparent);
-        background-size: 750px 750px ;
-
-        animation: snowAnim 3s linear;
-        animation-iteration-count: infinite;
-
-}
-
-.snow-box{
-    height: 100%;
-}
-.snow:after{
-    margin-left: -250px;
-    opacity: 0.5;
-    filter: blur(2px);
-    animation-direction: reverse;
-    animation-duration: 7s;
-}
-
-.snow:before{
-    margin-left: -250px;
-    opacity: 0.7;
-    filter: blur(1px);
-    animation-direction: reverse;
-    animation-duration: 10s;
-}
-
-@keyframes snowAnim{
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(650px);
-    }
-}
 
  /* Scroll  Bar */
  /* .content::-webkit-scrollbar {
