@@ -21,9 +21,9 @@ body{
     /* website screen */
 position: absolute;
 left: 40%;
-margin-top:3%;
+margin-top: 8%;
 width: 58%;
-height: 38vw;
+height: 40vw;
 background: #FFFFFF;
 /* /shadow/2xl */
 box-shadow: 0px 25px 50px -12px rgba(247, 247, 247, 0.668);
@@ -108,15 +108,16 @@ color: #FFFFFF;
 }
 
  /* Scroll  Bar */
-.content::-webkit-scrollbar {
+ /* .content::-webkit-scrollbar {
     width: 10px;
+
   }
    
-  /* Handle */
+  /* Handle 
   .content::-webkit-scrollbar-thumb {
     background: linear-gradient(rgb(8, 7, 120),rgb(169, 0, 181));
     border-radius: 10px;
-  }
+  }*/
 
 ::-webkit-scrollbar {
     display: none;
@@ -128,8 +129,9 @@ color: #FFFFFF;
     /*text-decoration-line: underline;*/
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
-    margin-top: 13%;
-    text-transform: uppercase;
+    margin-top: 6%;
+    
+    font-family: system-ui;
     text-decoration: wavy;
      /* transition */
      position: relative;
@@ -145,7 +147,7 @@ color: #FFFFFF;
     width: 0;
     font-size: 5vh;
     font-size: 5vw;
-    color: #5f0070;
+    color: #5c0b6a9c;
     -webkit-text-stroke: 0vw #e6e6e6; 
     border-right: 2px solid #25032b;
     overflow: hidden;
@@ -177,7 +179,11 @@ color: #FFFFFF;
 .navtext{
     font-family: system-ui;
     cursor: pointer;
+}
 
+.navtext:hover{
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .navtextactive{
@@ -185,10 +191,10 @@ color: #FFFFFF;
     font-family: system-ui;
     font-size: 1.4vw;
     font-weight: bold;
-    color: white;
-    background-color: #520460e2;
+    color: rgb(59, 2, 90);
     border-radius: 10% 30%;
     box-shadow: 0;
+    text-decoration: underline;
 }
 
 .startbutton{
@@ -196,7 +202,7 @@ color: #FFFFFF;
     cursor: pointer;
 width: 20vh;
 height: 3vw;
-margin-top: 30%;
+margin-top: 40%;
 margin-left: 40%;
 display: flex;
 justify-content: space-evenly;
@@ -206,7 +212,8 @@ box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.3);
 border-radius: 50px;
 border: none;
 font-size: 2.3vh;
-
+font-weight: lighter;
+font-family: system-ui;
 
 transition: 0.3s;
 }
@@ -215,7 +222,6 @@ transition: 0.3s;
     background: linear-gradient(90deg, #4815A4 16.67%, #AF55FF 100%);
     cursor: pointer;
     color: #FFFFFF;
-
 }
 
 
