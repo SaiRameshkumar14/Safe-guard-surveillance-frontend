@@ -98,6 +98,7 @@ border-radius: 48px;
     margin-top: 3%;
     height: 5vh;
     text-decoration: none;
+    list-style: none;
 }
 
 .navtext{
@@ -122,17 +123,9 @@ border-radius: 48px;
     text-decoration: underline;
 }
 
-
-
 /*------------------------------------------------------End common css-------------------------------------------------- */
 
  /*---------------Start Home.html-------------------------- */
-
-ul{
-    list-style: none;
-    text-decoration: none;
-}
-
 
 #textmain{
 /* Safe-Guard Surveillance */
@@ -142,9 +135,9 @@ width: 50%;
 font-family: system-ui;
 font-style: normal;
 font-size: 6vh;
-font-size: 4vw;
+font-size: 3.5vw;
 line-height: 100%;
-margin-top: 80vh;
+margin-top: 70vh;
 margin-left: -6%;
 /* or 97px */
 text-align: center;

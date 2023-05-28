@@ -95,6 +95,7 @@ border-radius: 48px;
     margin-top: 3%;
     height: 5vh;
     text-decoration: none;
+    list-style: none;
 }
 
 .navtext{
@@ -119,9 +120,32 @@ border-radius: 48px;
     text-decoration: underline;
 }
 
-ul{
-    list-style: none;
-    text-decoration: none;
-}
+#textmain{
+    /* Safe-Guard Surveillance */
+    position: absolute;
+    width: 50%;
+    
+    font-family: system-ui;
+    font-style: normal;
+    font-size: 6vh;
+    font-size: 3.5vw;
+    line-height: 100%;
+    margin-top: 70vh;
+    margin-left: -6%;
+    /* or 97px */
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgb(213, 213, 213);
+    letter-spacing: 0.10em;
+    color: #FFFFFF;
+    }
+    
+    #textmain:hover{
+        font-size: 5vh;
+        font-size: 5vh;
+    
+    }
+
 
 /*------------------------------------------------------End common css-------------------------------------------------- */
