@@ -1,4 +1,8 @@
-*{
+ /*---------------Start Home.html-------------------------- */
+ @import url('https://fonts.googleapis.com/css2?family=poppins:wght@700&display=swap');
+
+
+ *{
     margin: 0;
     padding: 0;
 }
@@ -19,11 +23,10 @@ position: absolute;
 left: 40%;
 margin-top:3%;
 width: 58%;
-height: 90%;
-
+height: 38vw;
 background: #FFFFFF;
 /* /shadow/2xl */
-box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 25px 50px -12px rgba(247, 247, 247, 0.668);
 border-radius: 48px;
 }
 
@@ -34,25 +37,28 @@ width: 50%;
 
 font-family: system-ui;
 font-style: normal;
-font-weight: 10%;
-font-size: 7vh;
+font-size: 6vh;
+font-size: 4vw;
 line-height: 100%;
-margin-top: 35%;
-margin-left: -9%;
+margin-top: 80vh;
+margin-left: -6%;
 /* or 97px */
 text-align: center;
+cursor: pointer;
+text-transform: uppercase;
+text-shadow: 2px 2px 5px rgb(213, 213, 213);
 letter-spacing: 0.10em;
 color: #FFFFFF;
 }
 #textmain:hover{
-    text-transform: uppercase;
-    font-size: 6vh;
-    text-shadow: 2px 2px 5px rgb(213, 213, 213);
+    font-size: 5vh;
+    font-size: 5vh;
+
 }
 
 .snow,.snow:after,.snow:before{
         position: absolute;
-        top: -10%;
+        top: -50%;
         left: 0;
         right: 0;
         bottom: 0;
@@ -66,7 +72,7 @@ color: #FFFFFF;
         radial-gradient(4px 4px at 150px 300px, #fff, transparent),
         radial-gradient(6px 6px at 250px 400px, #fff, transparent),
         radial-gradient(3px 3px at 50px 450px, #fff, transparent);
-        background-size: 650px 650px ;
+        background-size: 750px 750px ;
 
         animation: snowAnim 3s linear;
         animation-iteration-count: infinite;
@@ -80,12 +86,16 @@ color: #FFFFFF;
     margin-left: -250px;
     opacity: 0.5;
     filter: blur(2px);
+    animation-direction: reverse;
+    animation-duration: 7s;
 }
 
 .snow:before{
     margin-left: -250px;
     opacity: 0.7;
     filter: blur(1px);
+    animation-direction: reverse;
+    animation-duration: 10s;
 }
 
 @keyframes snowAnim{
@@ -97,6 +107,116 @@ color: #FFFFFF;
     }
 }
 
+ /* Scroll  Bar */
+.content::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+  /* Handle */
+  .content::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(8, 7, 120),rgb(169, 0, 181));
+    border-radius: 10px;
+  }
+
 ::-webkit-scrollbar {
     display: none;
 }
+
+ /*---------- body content -------------*/
+.texthead{
+
+    /*text-decoration-line: underline;*/
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    margin-top: 13%;
+    text-transform: uppercase;
+    text-decoration: wavy;
+     /* transition */
+     position: relative;
+     color: rgb(255, 255, 255);
+
+}
+
+.texthead::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    font-size: 5vh;
+    font-size: 5vw;
+    color: #5f0070;
+    -webkit-text-stroke: 0vw #e6e6e6; 
+    border-right: 2px solid #25032b;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 3%;
+    height: 5vh;
+}
+
+.navtext{
+    font-family: system-ui;
+    cursor: pointer;
+
+}
+
+.navtextactive{
+    cursor: pointer;
+    font-family: system-ui;
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: white;
+    background-color: #520460e2;
+    border-radius: 10% 30%;
+    box-shadow: 0;
+}
+
+.startbutton{
+    position: absolute;
+    cursor: pointer;
+width: 20vh;
+height: 3vw;
+margin-top: 30%;
+margin-left: 40%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+color: #232020;
+box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.3);
+border-radius: 50px;
+border: none;
+font-size: 2.3vh;
+
+
+transition: 0.3s;
+}
+
+.startbutton:hover{
+    background: linear-gradient(90deg, #4815A4 16.67%, #AF55FF 100%);
+    cursor: pointer;
+    color: #FFFFFF;
+
+}
+
+
+ /*---------------End Home.html-------------------------- */
