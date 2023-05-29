@@ -77,7 +77,7 @@ to{
     /* website screen */
 position: absolute;
 left: 40%;
-margin-top: 8%;
+margin-top: 6%;
 width: 58%;
 height: 40vw;
 background: #FFFFFF;
@@ -130,8 +130,8 @@ border-radius: 48px;
     font-size: 6vh;
     font-size: 3.5vw;
     line-height: 100%;
-    margin-top: 70vh;
-    margin-left: -6%;
+    margin-top: 55vh;
+    margin-left: -60%;
     /* or 97px */
     text-align: center;
     cursor: pointer;
