@@ -79,7 +79,7 @@ position: absolute;
 left: 40%;
 margin-top: 6%;
 width: 58%;
-height: 40vw;
+height: 80vh;
 background: #FFFFFF;
 /* /shadow/2xl */
 box-shadow: 0px 25px 50px -12px rgba(247, 247, 247, 0.668);
@@ -96,12 +96,14 @@ border-radius: 48px;
     height: 5vh;
     text-decoration: none;
     list-style: none;
+    transition: 1.3s;
 }
 
 .navtext{
     font-family: system-ui;
     cursor: pointer;
     text-decoration: none;
+    font-size: 1.3vw
 }
 
 .navtext:hover{
@@ -139,6 +141,7 @@ border-radius: 48px;
     text-shadow: 2px 2px 5px rgb(213, 213, 213);
     letter-spacing: 0.10em;
     color: #FFFFFF;
+    transition: 2s 0.2s;
     }
     
     #textmain:hover{
@@ -149,3 +152,17 @@ border-radius: 48px;
 
 
 /*------------------------------------------------------End common css-------------------------------------------------- */
+
+.ab-head{
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    font-family: math;
+    margin-top: 5vh;
+    text-decoration: underline;
+}
+
+.ab-mission{
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
