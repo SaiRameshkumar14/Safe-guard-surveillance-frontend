@@ -142,6 +142,8 @@ border-radius: 48px;
     text-shadow: 2px 2px 5px rgb(213, 213, 213);
     letter-spacing: 0.10em;
     color: #FFFFFF;
+    transition: 2s 0.2s;
+
     }
     
     #textmain:hover{
